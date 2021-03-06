@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<mat-card>
+  <app-home></app-home>
+  <app-file-upload></app-file-upload>
+  <button
+    mat-raised-button
+    [routerLink]="'/print'"
+    class="submit-btn"
+    color="accent"
+    [disabled]="loadFile"
+  >
+    列印訂單
+  </button>
+</mat-card>

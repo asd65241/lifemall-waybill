@@ -1,0 +1,22 @@
+mat-card {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  min-width: 200px;
+  align-content: center;
+  position: relative;
+}
+
+@media only screen and (min-width: 400px) {
+  mat-card {
+    top: 20vh;
+    margin: 1rem auto;
+  }
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  align-content: center;
+}

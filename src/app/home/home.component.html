@@ -1,0 +1,14 @@
+<div class="dateSelect">
+  <mat-form-field appearance="fill">
+    <mat-label>選擇開始日</mat-label>
+    <input
+      matInput
+      [matDatepicker]="dp"
+      [formControl]="currentDate"
+      (dateInput)="updateDate($event)"
+      (dateChange)="logDate()"
+    />
+    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+    <mat-datepicker #dp></mat-datepicker>
+  </mat-form-field>
+</div>

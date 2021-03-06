@@ -1,0 +1,20 @@
+<mat-form-field appearance="outline">
+  <mat-label>上載Lifemall訂單表</mat-label>
+  <ngx-mat-file-input
+    #fileUploadInput
+    [accept]="acceptFile"
+    (value)="(csvFile)"
+    (change)="fileChangeListener($event)"
+    (empty)="(isEmpty)"
+  ></ngx-mat-file-input>
+  <button
+    mat-icon-button
+    matSuffix
+    *ngIf="!fileUploadInput.empty"
+    (click)="fileUploadInput.clear($event)"
+  >
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-form-field>
+
+<p *ngFor="let order of dataArr; index as i">{{ order["Order id"] }}</p>
