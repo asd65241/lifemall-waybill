@@ -1,6 +1,6 @@
-# LifemallWaybill
+# Lifemall Waybill Printer
 
-This project is made for Lifemall HK for making their shipping waybill automatically using the csv file from the shopage e-shop. This project is fully built using Angular.
+This project is made for [Lifemall HK](https://lifemall.com.hk) for printing the shipping waybill automatically using the csv file from the shopage e-shop. This project is fully built using Angular.
 
 ## Usage
 
@@ -20,11 +20,19 @@ The app will automatically reload if you change any of the source files.
 
 ## Deploy 
 
-This app is originally deploy to Google's Firebase Platform, since this web app run purely on client side.
+This app is originally deploy to Google's Firebase Platform. This web app purely run on client side.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+
+
+## Print Sample
+
+<img src="https://i.ibb.co/QmktT0v/sample.jpg">
+
+
 
 ## Demo Link
 
