@@ -21,7 +21,7 @@ export class FileUploadComponent implements OnInit {
   processArr() {
     for (let i = 1; i < this.dataArr.length - 1; i++) {
       if (this.dataArr[i]['Order Id'] != null) {
-        this.dataArr[i]['Order Id'] = this.dataArr[i]['Order Id'].slice(1, -1);
+        this.dataArr[i]['Order Id'] = this.dataArr[i]['Order Id'];
         let dataNum: number;
         dataNum = Date.parse(this.dataArr[i]['Created Date'].slice(1, 11));
         this.dataArr[i]['Created Date'] = dataNum;
